@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
       - name: testassignment
-        image: bhavya762/testassignment:latest  
+        image: deepika135/testassignment:latest  
         imagePullPolicy: Always             
       restartPolicy: Never                  
   backoffLimit: 4
