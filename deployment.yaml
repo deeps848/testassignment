@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: testassignment-job  
+spec:
+  template:
+    metadata:
+      labels:
+        app: testassignment
+    spec:
+      containers:
+      - name: testassignment
+        image: bhavya762/testassignment:latest  
+        imagePullPolicy: Always             
+      restartPolicy: Never                  
+  backoffLimit: 4
